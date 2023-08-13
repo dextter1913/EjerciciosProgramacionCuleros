@@ -9,13 +9,13 @@ $fcp;
 $mat1= 3.9;
 $mat2= 4.0;
 $fmat;
-
 $fcp = ($cp1 + $cp2) / 2;
 $fmat= ($mat1 + $mat2) / 2;
+
 if ($fcp >= 4.5 || $fmat >= 3.9) {
-    Echo "Pasa. ";
+    echo $fcp, " ", $fmat, " Pasa. ";
 } else {
-    echo "No pasa. ";
+    echo $fcp, " ", $fmat, " No pasa. ";
 }
 
 //FUNCION
@@ -36,9 +36,9 @@ function prom($fcp, $fmat){
 $promedio = prom($fcp, $fmat);
 
 if ($fcp >=4.5 || $fmat >=3.9) {
-    echo "Pasa. ";
+    echo $fcp, " ", $fmat, " Pasa. ";
 } else {
-    echo "No pasa. ";
+    echo $fcp, " ", $fmat, " No pasa. ";
 }
 
 //CLASE
@@ -62,8 +62,8 @@ $promedio = new promedio;
 $promedio = $promedio->promeUni($fcp, $fmat);
 
 if ($fcp >=4.5 || $fmat >=3.9) {
-    echo "Pasa. ";
+    echo $fcp, " ", $fmat, " Pasa. ";
 } else {
-    echo "No pasa. ";
+    echo $fcp, " ", $fmat, " No pasa. ";
 }
 
