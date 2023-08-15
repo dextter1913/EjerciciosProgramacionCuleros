@@ -37,10 +37,16 @@ $numeros = [
 ];
 
 $b = count($numeros);
+try{
 while ($i < $b) {
     
-    $suma = $suma + intval($numeros[$i]); 
+    $suma = $suma + $numeros; 
     $i = $i +1;
 }
 $promedio = $suma / $b;
-echo $promedio;
+
+ 
+    echo $promedio;
+} catch (\Throwable $e) {
+    echo "hubo un error ". $e->getMessage();
+}
